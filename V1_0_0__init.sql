@@ -6,6 +6,7 @@ CREATE TABLE products (
   brand TEXT
 );
 
+
 CREATE TABLE product_identifiers (
   identifier_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   product_id UUID REFERENCES products(product_id),
